@@ -79,6 +79,7 @@ body {
 header {
 	background-color: #fff;
 	border-bottom: 1px solid #DDD;
+	height: 4.375em;
 	position: fixed;
 	width: 100%;
 }
@@ -114,4 +115,47 @@ header {
 .main-nav__item.active a {
 	color: #4c5058;
 	font-weight: bold;
+}
+
+/* Presentation */
+
+.presentation {
+	background: url(../images/bg-image.jpg) center center fixed;
+	background-size: cover;
+	height: 100vh;
+	min-height: 28.125em;
+	padding-top: 4.375em;
+	text-align: center;
+}
+
+.presentation__header {
+	font-size: 3.125em;
+	margin-top: 30vh;
+}
+
+.presentation__subheader {
+	font-size: 1.563em;
+	margin-top: 1em;
+}
+
+.presentation__header,
+.presentation__subheader {
+	color: #fff;
+	font-weight: 300;
+}
+
+.presentation__button {
+    background-color: #f15a29;
+    border: 0;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    margin-top: 1.125em;
+    padding: 1em 1.5em;
+    border-radius: 0.25em;
+}
+
+.presentation__button:hover {
+	background-color: #d9400e;
+	cursor: pointer;
 }
