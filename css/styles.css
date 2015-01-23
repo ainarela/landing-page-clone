@@ -1,3 +1,21 @@
+/* INDEX 
+----------------------------------------------*/
+
+/* 	- Reset CSS
+	- Making things visible
+	- Base
+	- Layout
+	- Buttons
+	- Header
+	- Presentation section
+	- Features section
+	- Footer
+
+-------------------------------------------------- */
+
+
+
+
 /* Reset CSS */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -69,6 +87,8 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+/* Layout */
+
 .container {
 	margin: 0 auto;
 	max-width: 50em;
@@ -116,6 +136,7 @@ header {
 	height: 4.375em;
 	position: fixed;
 	width: 100%;
+	z-index: 9999;
 }
 
 .logo {
@@ -151,7 +172,7 @@ header {
 	font-weight: bold;
 }
 
-/* Presentation */
+/* Presentation section */
 
 .presentation {
 	background: url(../images/bg-image.jpg) no-repeat center center fixed;
@@ -178,7 +199,7 @@ header {
 	font-weight: 300;
 }
 
-/* Features */
+/* Features section */
 
 .features {
 padding: 8.5em 0;
@@ -206,3 +227,50 @@ p.feature-box__description {
     margin: 1.5em 0 0;
 }
 
+/* Footer */
+
+footer {
+	text-align: center;
+	margin-bottom: 8.5em;
+}
+
+.social {
+	border-top: 1px solid #eaebec;
+	padding-top: 2.5em;
+}
+
+.social__title {
+	color: #000;
+}
+
+.social__link {
+	display: inline-block;
+	margin: 1.8em 1.25em;
+}
+
+.social__icon {
+ width: 2.5em; 
+ height: 2.5em; 
+ border-radius: 1.25em; 
+ text-align: center; 
+ padding-top: 0.625em; 
+ border: 1px solid #eaebec; 
+}
+
+.fa-twitter {
+	color: #55acee;
+}
+
+.fa-facebook {
+color: #4c66a4;
+}
+
+.fa-instagram {
+color: #3f729b;
+}
+
+.copy {
+font-size: 0.9em;
+font-weight: 300;
+color: #838994;
+}
