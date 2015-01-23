@@ -54,7 +54,7 @@ table {
 /*body {
     background-color: LightGray;
 }
-div {
+div, section {
     border: 1px solid Chocolate;
 }*/
 
@@ -65,13 +65,47 @@ div {
 }
 
 body {
+	color: #1d1e21;
 	font-family: 'Roboto', sans-serif;
 }
 
 .container {
 	margin: 0 auto;
-	max-width: 45em;
+	max-width: 50em;
 	padding: 0 0.9375em;
+	width: 60%;
+}
+
+.col3 {
+	width: 33.3333%;
+	float: left;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+/* Buttons */
+
+.big-button {
+    background-color: #f15a29;
+    border: none;
+    border-radius: 0.25em;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    margin-top: 1.125em;
+    padding: 1em 1.5em;
+    text-shadow: none;
+}
+
+.big-button:hover {
+	background-color: #d9400e;
+	cursor: pointer;
 }
 
 /* Header */
@@ -120,7 +154,7 @@ header {
 /* Presentation */
 
 .presentation {
-	background: url(../images/bg-image.jpg) center center fixed;
+	background: url(../images/bg-image.jpg) no-repeat center center fixed;
 	background-size: cover;
 	height: 100vh;
 	min-height: 28.125em;
@@ -144,18 +178,31 @@ header {
 	font-weight: 300;
 }
 
-.presentation__button {
-    background-color: #f15a29;
-    border: 0;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.2em;
-    margin-top: 1.125em;
-    padding: 1em 1.5em;
-    border-radius: 0.25em;
+/* Features */
+
+.features {
+padding: 8.5em 0;
 }
 
-.presentation__button:hover {
-	background-color: #d9400e;
-	cursor: pointer;
+.features__title {
+	font-size: 2.75em;
+	font-weight: 300;
+	margin-bottom: 1em;
+	text-align: center;
 }
+
+.feature-box {
+    padding: 0.625em;
+    text-align: center;
+}
+
+img.feature-box__icon {
+    margin: 0 20%;
+    width: 60%;
+}
+
+p.feature-box__description {
+    font-size: 1.563rem;
+    margin: 1.5em 0 0;
+}
+
