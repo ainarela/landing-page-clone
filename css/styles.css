@@ -48,3 +48,71 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Making things visible */
+
+/*body {
+    background-color: LightGray;
+}
+div {
+    border: 1px solid Chocolate;
+}*/
+
+/* Base */
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 45em;
+}
+
+/* Header */
+
+header {
+	background-color: #fff;
+	border-bottom: 1px solid #DDD;
+	position: fixed;
+	width: 100%;
+}
+
+.main-nav {
+	position: relative;
+}
+
+.logo {
+	height: 2.5em;
+	margin: 0.9375em 0;
+}
+
+.main-nav__list {
+    /*display: inline-block;*/
+    /*float: right;*/
+    margin: 1.6875em 0 1.6875em 2.25em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 0.625em;
+    font-size: 1em;
+    /* height: 1em; */
+}
+
+.main-nav__item.active a {
+	color: #4c5058;
+	font-weight: bold;
+}
+
+.main-nav__item a {
+	text-decoration: none;
+	color: #838994;
+}
+
+.main-nav__item a:hover {
+	color: #333333;
+}
