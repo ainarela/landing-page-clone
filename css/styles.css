@@ -97,8 +97,11 @@ body {
 }
 
 .col3 {
-	width: 33.3333%;
-	float: left;
+	/*width: 33.3333%;
+	float: left;*/
+	display: inline-block;
+	vertical-align: top;
+	width: 32.5%;
 }
 
 .clearfix:after { 
